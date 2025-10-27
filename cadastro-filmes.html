@@ -1,33 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinema</title>
+    <title>Cadastro de Filmes</title>
     <link rel="stylesheet" href="/estilos/styles.css">
 </head>
 <body>
-    <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="cadastro-filmes.html">Cadastro de Filmes</a></li>
-                    <li><a href="cadastro-salas.html">Cadastro de Salas</a></li>
-                    <li><a href="cadastro-sessoes.html">Cadastro de Sessões</a></li>
-                    <li><a href="sessoes.html">Sessões</a></li>
-                    <li><a href="venda-ingresso.html">Venda de Ingressos</a></li>    
-                </ul>
-            </nav>
-    </header>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cadastro-filmes.html">Cadastro de Filmes</a></li>
+            <li><a href="cadastro-salas.html">Cadastro de Salas</a></li>
+            <li><a href="cadastro-sessoes.html">Cadastro de Sessões</a></li>
+            <li><a href="sessoes.html">Sessões</a></li>
+            <li><a href="venda-ingresso.html">Venda de Ingressos</a></li>    
+        </ul>
+    </nav>
+</header>
 
-    <main>
-        <h1>ola mundo</h1>
-    </main>
+<main>
+    <h2>Cadastro de Filmes</h2>
+    <form id="formFilme">
+        <label>Título: <input type="text" id="titulo" required></label><br>
+        <label>Gênero: <input type="text" id="genero" required></label><br>
+        <label>Descrição: <textarea id="descricao"></textarea></label><br>
+        <label>Classificação:
+            <select id="classificacao">
+                <option>Livre</option>
+                <option>10 anos</option>
+                <option>12 anos</option>
+                <option>14 anos</option>
+                <option>16 anos</option>
+                <option>18 anos</option>
+            </select>
+        </label><br>
+        <label>Duração (min): <input type="number" id="duracao" required></label><br>
+        <label>Data de Estreia: <input type="date" id="estreia"></label><br>
+        <button type="submit">Salvar Filme</button>
+    </form>
+</main>
 
-    <footer>
-        História |Onde estamos |Classificação Indicativa |Anuncie <br>
-        Samuel Reges Costa 2025 © Todos os direitos reservados
-    </footer>
+<footer>
+    História | Onde estamos | Classificação Indicativa | Anuncie <br>
+    Samuel Reges Costa 2025 © Todos os direitos reservados
+</footer>
 
+<script src="/js/filmes.js"></script>
 </body>
 </html>
