@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #141414;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: linear-gradient(180deg, #0d0d0d 0%, #141414 100%);
+  padding: 25px 0 15px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #e50914;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e5e5e5;
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 8px 18px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-weight: 400;
+}
+
+nav a:hover {
+  background-color: #e50914;
+  color: #fff;
+  border-color: #e50914;
+}
+
+main {
+  flex: 1;
+  width: 90%;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #1f1f1f;
+  border-radius: 15px;
+  padding: 35px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+main h2 {
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #e50914;
+  padding-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  color: #e5e5e5;
+}
+
+input,
+select,
+textarea {
+  margin-top: 6px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  background-color: #444;
+  box-shadow: 0 0 6px #e50914;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  background-color: #e50914;
+  color: white;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #b20710;
+  transform: scale(1.03);
+}
+
+.lista-sessoes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.sessao-card {
+  background: linear-gradient(180deg, #222 0%, #111 100%);
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sessao-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.5);
+}
+
+.sessao-card h3 {
+  color: #e50914;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.sessao-card p {
+  color: #ccc;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.sessao-card button {
+  margin-top: 10px;
+  background-color: #e50914;
+  font-weight: 600;
+}
+
+.sessao-card button:hover {
+  background-color: #b20710;
+}
+
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  main {
+    width: 95%;
+    padding: 25px;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .sessao-card {
+    padding: 15px;
+  }
+}

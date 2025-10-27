@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinema - Início</title>
-    <link rel="stylesheet" href="/estilos/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema - Página Inicial</title>
+  <link rel="stylesheet" href="estilos/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="cadastro-filmes.html">Cadastro de Filmes</a></li>
-                <li><a href="cadastro-salas.html">Cadastro de Salas</a></li>
-                <li><a href="cadastro-sessoes.html">Cadastro de Sessões</a></li>
-                <li><a href="sessoes.html">Sessões</a></li>
-                <li><a href="venda-ingresso.html">Venda de Ingressos</a></li>    
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Sistema de Controle de Cinema</h1>
+    <nav>
+      <a href="cadastro-filmes.html">Cadastro de Filmes</a>
+      <a href="cadastro-salas.html">Cadastro de Salas</a>
+      <a href="cadastro-sessoes.html">Cadastro de Sessões</a>
+      <a href="sessoes.html">Sessões Disponíveis</a>
+      <a href="venda-ingresso.html">Venda de Ingressos</a>
+    </nav>
+  </header>
 
-    <main>
-        <h1>Bem-vindo ao Sistema de Cinema</h1>
-        <p>Use o menu acima para navegar entre as funções do sistema.</p>
-        <button onclick="localStorage.clear(); alert('Todos os dados foram apagados!')">🗑️ Limpar LocalStorage</button>
-    </main>
+  <main>
+    <h2>Bem-vindo ao Sistema de Cinema!</h2>
+    <p>Use o menu acima para navegar entre as opções.</p>
+  </main>
 
-    <footer>
-        História | Onde estamos | Classificação Indicativa | Anuncie <br>
-        Samuel Reges Costa 2025 © Todos os direitos reservados
-    </footer>
+  <script src="Script/index.js"></script>
 </body>
 </html>
