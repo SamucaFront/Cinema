@@ -18,6 +18,14 @@ Os dados são salvos no navegador (localStorage) nas seguintes chaves:
 - sessoes
 - ingressos
 
+## Cores usadas
+
+| Descrição | Cor | Código |
+|------------|------|--------|
+| Vermelho principal | 🔴 | `#E50914` |
+| Preto de fundo | ⚫ | `#000000` |
+| Cinza escuro (menus, sombras) | ⚫ | `#141414` |
+| Branco do texto | ⚪ | `#FFFFFF` |
 
 ## Acesse o sistema online abaixo: 
 [Visite o site](https://samucafront.github.io/Cinema/index.html)
