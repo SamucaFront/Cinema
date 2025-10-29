@@ -19,41 +19,51 @@
   </header>
 
   <main>
-    <form id="formSessao">
-  
-      <label>Filme:
-        <input type="text" id="filme" name="filme" placeholder="Digite o nome do filme" required>
-      </label>
+      <form id="formSessao">
+  <label>Filme:
+    <select id="filme" name="filme" required>
+      <option value="">Selecione um filme</option>
+      <option value="Vingadores: Ultimato">Vingadores: Ultimato</option>
+      <option value="Interestelar">Interestelar</option>
+      <option value="Homem-Aranha: Sem Volta Para Casa">Homem-Aranha: Sem Volta Para Casa</option>
+      <option value="Avatar: O Caminho da Água">Avatar: O Caminho da Água</option>
+    </select>
+  </label>
 
-    
-      <label>Sala:
-        <input type="text" id="sala" name="sala" placeholder="Digite o nome da sala" required>
-      </label>
+  <label>Sala:
+    <select id="sala" name="sala" required>
+      <option value="">Selecione uma sala</option>
+      <option value="Sala 1 - 2D">Sala 1 - 2D</option>
+      <option value="Sala 2 - 3D">Sala 2 - 3D</option>
+      <option value="Sala IMAX">Sala IMAX</option>
+    </select>
+  </label>
 
-      <label>Data e Hora:
-        <input type="datetime-local" id="dataHora" name="dataHora" required>
-      </label>
+  <label>Data e Hora: 
+    <input type="datetime-local" id="dataHora" name="dataHora" required>
+  </label>
 
-      <label>Preço (R$):
-        <input type="number" id="preco" name="preco" required>
-      </label>
+  <label>Preço (R$): 
+    <input type="number" id="preco" name="preco" required>
+  </label>
 
-      <label>Idioma:
-        <select id="idioma" name="idioma">
-          <option>Dublado</option>
-          <option>Legendado</option>
-        </select>
-      </label>
+  <label>Idioma:
+    <select id="idioma" name="idioma">
+      <option>Dublado</option>
+      <option>Legendado</option>
+    </select>
+  </label>
 
-      <label>Formato:
-        <select id="formato" name="formato">
-          <option>2D</option>
-          <option>3D</option>
-        </select>
-      </label>
+  <label>Formato:
+    <select id="formato" name="formato">
+      <option>2D</option>
+      <option>3D</option>
+    </select>
+  </label>
 
-      <button type="submit">Salvar Sessão</button>
-    </form>
+  <button type="submit">Salvar Sessão</button>
+</form>
+
   </main>
 
   <script src="Script/cadastro-sessoes.js"></script>
